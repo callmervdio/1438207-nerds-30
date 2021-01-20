@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Nikita Radio](https://up.htmlacademy.ru/htmlcss/30/user/1438207).
-* Наставник: `Неизвестно`.
+* Студент: [Никита Воложанин](https://up.htmlacademy.ru/htmlcss/30/user/1438207).
+* Наставник: [Алиса Пепел](https://htmlacademy.ru/profile/id615601)
 
 ---
 
