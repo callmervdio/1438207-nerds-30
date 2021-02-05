@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
@@ -16,15 +16,15 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-header-navigation">
       <a class="main-header-logo"><img src="img/logo.png" width="160" height="66" alt="Логотип «Нёрдс»"></a>
-      <ul class="site-navigation">
+      <ul class="main-header-links">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <a class="cart-link" href="#">Корзина</a>
+      <a class="main-header-cart" href="#">Корзина</a>
     </nav>
   </header>
   <main class="container">
@@ -53,96 +53,101 @@
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
-        <li class="service-item">
-          <h3 class="title-bold service-title">Веб-сайты</h3>
-          <p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+        <li class="services-item">
+          <h3 class="title-bold services-title">Веб-сайты</h3>
+          <p class="services-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="button button-red" href="#">Заказать</a>
         </li>
-        <li class="service-item">
-          <h3 class="title-bold service-title">Приложения</h3>
-          <p class="service-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+        <li class="services-item">
+          <h3 class="title-bold services-title">Приложения</h3>
+          <p class="services-text">Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="button button-green" href="#">Заказать</a>
         </li>
-        <li class="service-item">
-          <h3 class="title-bold service-title">Презентации</h3>
-          <p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+        <li class="services-item">
+          <h3 class="title-bold services-title">Презентации</h3>
+          <p class="services-text">Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="button button-yellow" href="#">Заказать</a>
         </li>
       </ul>
     </section>
-    <section>
+    <div class="more-wrapper">
       <h2 class="visually-hidden">Подробнее</h2>
-      <div class="more-wrapper">
+      <section class="more">
         <h3 class="title more-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
-        <p class="more-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
+        <p class="more-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
+          Работаем не
           покладая рук, как роботы.</p>
-        <p class="title-bold more-title2">Выполняем заказы на разработку:</p>
+        <p class="title-bold more-subtitle">Выполняем заказы на разработку:</p>
         <ul class="more-list">
           <li class="more-item">Веб-сайтов любой сложности</li>
           <li class="more-item">Мобильных приложений для iOS и Android</li>
           <li class="more-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-      </div>
-      <div class="add"> <!-- Сокращение от additional - дополнительный -->
+      </section>
+
+      <section class="add">
         <img src="img/nerds-illustration.png" width="360" height="208" alt="Иллюстрация Нёрдс">
         <p class="title-bold add-title">с 2004 года Любим точность во всем:</p>
         <ul class="add-list">
           <li class="add-item"><span>146%</span>Уровень самоотдачи</li>
           <li class="add-item"><span>100%</span>Соблюдение сроков</li>
-          <li class="add-item"><span>50%</span>Минимальная предоплата</li> <!-- Не придумал, как для спанов сделать. Класс в классе? Ответь в коммите, плиз -->
+          <li class="add-item"><span>50%</span>Минимальная предоплата</li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
     <section class="clients">
       <h2 class="visually-hidden">Клиенты</h2>
       <ul class="clients-list">
-        <li class="clients-item"><a><img src="img/logo-html-academy.png" width="199" height="68" alt="HTML Academy"></a></li>
-        <li class="clients-item"><a><img src="img/logo-borodinski.png" width="209" height="90" alt="Barbershop Borodinski"></a></li>
-        <li class="clients-item"><a><img src="img/logo-pink.png" width="185" height="52" alt="Pink"></a></li>
-        <li class="clients-item"><a><img src="img/logo-mishka.png" width="173" height="84" alt="Mishka"></a></li>
+        <li class="clients-item"><a href="#"><img src="img/logo-html-academy.png" width="199" height="68"
+              alt="HTML Academy"></a></li>
+        <li class="clients-item"><a href="#"><img src="img/logo-borodinski.png" width="209" height="90"
+              alt="Barbershop Borodinski"></a></li>
+        <li class="clients-item"><a href="#"><img src="img/logo-pink.png" width="185" height="52" alt="Pink"></a></li>
+        <li class="clients-item"><a href="#"><img src="img/logo-mishka.png" width="173" height="84" alt="Mishka"></a>
+        </li>
       </ul>
     </section>
   </main>
   <footer class="main-footer">
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <a><img src="img/map.png" width="1440" height="416" alt="Карта"></a>
+      <a href="#"><img src="img/map.png" width="1440" height="416" alt="Карта"></a>
       <div>
         <p class="title-bold contacts-title">NЁRDS DESIGN STUDIO</p>
         <p class="contacts-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="contacts-text">тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-        <a class="button" href="#">Напишите нам</a>
+        <a class="button button-red" href="#">Напишите нам</a>
       </div>
     </section>
 
-    <section class="footer-social">
+    <section class="social">
       <h2 class="visually-hidden">Соц. сети</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-item"><a href="#" title="Вк"></a></li>
-        <li class="footer-social-item"><a href="#" title="Фб"></a></li>
-        <li class="footer-social-item"><a href="#" title="Инста"></a></li>
+      <ul class="social-list">
+        <li class="social-item"><a href="#" title="Вк"></a></li>
+        <li class="social-item"><a href="#" title="Фб"></a></li>
+        <li class="social-item"><a href="#" title="Инста"></a></li>
       </ul>
       <div>
         <p class="title-bold social-title">Давайте дружить, это выгодно!</p>
-        <p class="sale-text">Скидка 10% для друзей из социальных сетей.</p>
+        <p class="social-sale">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </section>
   </footer>
 
   <section class="modal">
-    <h2 class="title-bold title-popup">Напишите нам</h2>
-    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="title-bold add-item"> <!-- Классы указал для Ваше имя, а для Имя Фамилия где указывается?-->
-        <label for="feedback-name">Ваше имя</label>
-        <input id="feedback-name" type="name" name="name" placeholder="Имя Фамилия">
+    <h2 class="title-bold modal-title">Напишите нам</h2>
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="title-bold modal-item">
+        <label for="modal-name">Ваше имя</label>
+        <input id="modal-name" type="name" name="name" placeholder="Имя Фамилия">
       </p>
-      <p class="title-bold add-item">
-        <label for="feedback-email">Ваш email</label>
-        <input id="feedback-email" type="email" name="email" placeholder="email@example.com">
+      <p class="title-bold modal-item">
+        <label for="modal-email">Ваш email</label>
+        <input id="modal-email" type="email" name="email" placeholder="email@example.com">
       </p>
-      <p class="title-bold add-item">
-        <label for="feedback-text">Текст письма</label>
-        <input id="feedback-text" type="text" name="text" placeholder="В свободной форме">
+      <p class="title-bold modal-item">
+        <label for="modal-text">Текст письма</label>
+        <input id="modal-text" type="text" name="text" placeholder="В свободной форме">
       </p>
       <button class="button button-red" type="submit">Заказать</button>
     </form>

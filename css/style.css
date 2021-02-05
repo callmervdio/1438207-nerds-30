@@ -22,7 +22,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: var(--text-grey);
-  background-color: var(--basic-white: #ffffff;);
+  background-color: var(--basic-white);
 
 }
 
@@ -76,7 +76,7 @@ img {
 
 /* Main navigation */
 
-.main-navigation {
+.main-header-navigation {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -90,25 +90,36 @@ img {
   list-style: none;
 }
 
+/* About */
+
+
 .about-title {
   font-size: 55px;
   line-height: 55px;
 }
 
-.service-title {
+/* Services */
+
+.services-title {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
 }
+
+/* More */
 
 .more-title {
   font-size: 45px;
   line-height: 45px;
 }
 
+/* Additional */
+
 .add-item {
   line-height: 18px;
 }
+
+/* Contacts */
 
 .contacts-title {
   font-size: 18px;
@@ -120,17 +131,32 @@ img {
   color: var(--contacts);
 }
 
+/* Social */
+
 .social-title {
   font-size: 36px;
   line-height: 36px;
 }
 
-.sale-text {
+
+.social-sale {
   line-height: 22px;
   color: var(--sale);
 }
 
-.title-popup {
+/* Popup */
+
+.modal-title {
   font-size: 45px;
   line-height: 52,73px;
+}
+
+.modal-form input {
+  font: inherit;
+  line-height: 18px;
+  color: var(--sale);
+}
+
+.modal-item {
+  line-height: 18px;
 }
