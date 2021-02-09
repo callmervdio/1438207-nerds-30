@@ -8,6 +8,8 @@
   --basic-extra-grey: #888888;
   --contacts: #666666;
   --sale: #444444;
+  --guide-grey: #DFDFDF;
+  --guide-extra-grey: #D5D5D5;
 
 }
 
@@ -169,6 +171,42 @@ ul {
   color: var(--text-black);
 }
 
+/* Filters */
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 20px;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--text-grey);
+}
+
+.filter-title {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Pagination */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a:hover{
+  background-color: var(--guide-grey);
+}
+
+.pagination-item a:focus{
+  background-color: var(--guide-extra-grey);
+}
+
 /* Contacts */
 
 .contacts-title {
@@ -221,3 +259,4 @@ ul {
 .modal-button {
   border: none;
 }
+
