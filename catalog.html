@@ -29,18 +29,18 @@
     </header>
 
   <main>
-    <h1 class="page-title about-title">Магазин готовых шаблонов</h1>
+    <h1 class="title about-title">Магазин готовых шаблонов</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="cost-block">
-          <legend>Стоимость:</legend>
+        <fieldset>
+          <legend class="filters-title">Стоимость:</legend>
           <div></div>
         </fieldset>
 
-        <fieldset class="grid-block">
-          <legend>Сетка:</legend>
-          <ul class="grid-list">
+        <fieldset>
+          <legend class="filters-title">Сетка:</legend>
+          <ul>
             <li class="filter-option filter-radio">
               <input class="filter-input-radio filter-input" type="checkbox" name="grid" id="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
@@ -56,9 +56,9 @@
           </ul>
         </fieldset>
 
-        <fieldset class="features-block">
-          <legend>Особенности:</legend>
-          <ul class="features-list">
+        <fieldset>
+          <legend class="filters-title">Особенности:</legend>
+          <ul>
             <li class="filter-option filter-checkbox">
               <input class="filter-input-checkbox filter-input" type="checkbox" name="features" id="filter-slider" checked>
               <label for="filter-slider">Слайдер</label>
@@ -85,11 +85,11 @@
       </form>
     </section>
 
-    <section>
+    <section class="catalog">
       <h2 class="visually-hidden">Каталог шаблонов</h2>
-      <div>
-        <p class="filter-title">Cортировать:</p>
-        <ul class="sorting-list">
+      <div class="sorting">
+        <p class="filters-title">Cортировать:</p>
+        <ul>
           <li class="sorting-item"><a href="#">По цене</a></li>
           <li class="sorting-item"><a href="#">По типу</a></li>
           <li class="sorting-item"><a href="#">По названию</a></li>
@@ -100,7 +100,7 @@
       <ul class="catalog-list">
         <li class="catalog-item">
           <a href="#"><img src="img/img-sedona.jpg" width="358" height="578" alt="Sedona"></a>
-          <div>
+          <div class="catalog-info">
             <h3 class="title-bold catalog-title">SEDONA</h3>
             <p class="catalog-text">Информационный сайт для туристов</p>
             <a class="button button-red" href="#">9900 ₽</a>
@@ -108,7 +108,7 @@
         </li>
         <li class="catalog-item">
           <a href="#"><img src="img/img-pink.jpg" width="358" height="578" alt="Pink"></a>
-          <div>
+          <div class="catalog-info">
             <h3 class="title-bold catalog-title">Pink App</h3>
             <p class="catalog-text">Продуктовый лендинг приложения для iOS и Android</p>
             <a class="button button-red" href="#">9900 ₽</a>
@@ -116,7 +116,7 @@
         </li>
         <li class="catalog-item">
           <a href="#"><img src="img/img-barbershop.jpg" width="358" height="578" alt="Borodinski"></a>
-          <div>
+          <div class="catalog-info">
             <h3 class="title-bold catalog-title">Barbershop</h3>
             <p class="catalog-text">Сайт салона красоты. Для мужчин, да.</p>
             <a class="button button-red" href="#">9900 ₽</a>
@@ -124,7 +124,7 @@
         </li>
         <li class="catalog-item">
           <a href="#"><img src="img/img-mishka.jpg" width="358" height="578" alt="Mishka"></a>
-          <div>
+          <div class="catalog-info">
             <h3 class="title-bold catalog-title">MISHKA</h3>
             <p class="catalog-text">Интернет-магазин вязаных игрушек</p>
             <a class="button button-red" href="#">9900 ₽</a>
@@ -132,7 +132,7 @@
         </li>
         <li class="catalog-item">
           <a href="#"><img src="img/img-aplus.jpg" width="358" height="578" alt="Aplus"></a>
-          <div>
+          <div class="catalog-info">
             <h3 class="title-bold catalog-title">A Plus</h3>
             <p class="catalog-text">Лендинг курсов повышения квалификации</p>
             <a class="button button-red" href="#">9900 ₽</a>
@@ -140,14 +140,14 @@
         </li class="catalog-item">
         <li>
           <a href="#"><img src="img/img-kvast.jpg" width="358" height="578" alt="Kvast"></a>
-          <div>
+          <div class="catalog-info">
             <h3 class="title-bold catalog-title">КВАСТ</h3>
             <p class="catalog-text">Промо-сайт производителя крафтового кваса</p>
             <a class="button button-red" href="#">9900 ₽</a>
           </div>
         </li>
       </ul>
-      <ul class="pagination-list">
+      <ul class="pagination">
         <li class="pagination-item">
           <a>1</a>
         </li>
