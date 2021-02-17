@@ -10,6 +10,8 @@
   --sale: #444444;
   --guide-grey: #DFDFDF;
   --guide-extra-grey: #D5D5D5;
+  --text-black: 0, 0, 0;
+
 
 }
 
@@ -25,6 +27,11 @@ body {
   font-weight: 400;
   color: var(--text-grey);
   background-color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 
 }
 
@@ -102,9 +109,25 @@ ul {
   list-style:none;
   }
 
+  /* Grid */
+
+.page {
+  height: 100%;
+}
+
+/* Main header */
+
+.main-header {
+
+  margin-bottom: 70px;
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
 /* Main navigation */
 
 .main-header-navigation {
+  display: grid;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -122,12 +145,61 @@ ul {
   opacity: 0.3;
 }
 
-.site-navigation {
+/* Container */
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+/* Logo */
+.main-header-logo {
+  order: 0; /* логотип не встаёт в ряд с навом почему-то... */
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+
+.main-header-bar {
+  background-color: var(--basic-grey);
+}
+
+.main-header-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header-links {
+  margin: 0;
+  padding: 0;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
   list-style: none;
 }
 
+.main-header-cart {
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+
+
 /* About */
 
+.about {
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
+.about-item {
+  text-align: center;
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
+}
 
 .about-title {
   font-size: 55px;
@@ -136,13 +208,43 @@ ul {
 
 /* Services */
 
+.services {
+  margin-bottom: 80px;
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item {
+  text-align: center;
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
+}
+
 .services-title {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
+/* More-Wrapper */
+.more-wrapper {  display: grid;
+  grid-template-columns: 1fr 1fr;
+}}
+
+
 /* More */
+
+.more { /* этот секшн не выделился цветом почему-то + не понял, как отцентровать текст в нем */
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+  outline-offset: -5px;
+}
 
 .more-title {
   font-size: 45px;
@@ -156,6 +258,11 @@ ul {
 
 /* Additional */
 
+.add {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
+
 .add-item {
   line-height: 18px;
 }
@@ -164,12 +271,22 @@ ul {
   text-transform: uppercase;
 }
 
+.add-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
 .add-percents {
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
   color: var(--text-black);
 }
+
+/* Clients */
+.clients-list {display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;}
 
 /* Filters */
 
@@ -194,27 +311,6 @@ ul {
   text-transform: uppercase;
 }
 
-/* Pagination */
-
-.pagination-list {
-  list-style: none;
-}
-
-.pagination-item a:current {
-  background-color: var(--basic-grey);
-}
-
-.pagination-item a:hover {
-  background-color: var(--guide-grey);
-}
-
-.pagination-item a:focus {
-  background-color: var(--guide-extra-grey);
-}
-
-.pagination-item a:active {
-  background-color: var(--rgba(0, 0, 0, 0.0001); /* не понял момент с этим цветом и как его записать*/
-}
 
 /* Catalog */
 
@@ -226,13 +322,16 @@ ul {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  display: inline;
+
+}
 }
 
-.catalog-title a:hover {
-  background-color: #FB565A;
+.catalog-title:hover {
+  color: #FB565A;
 }
 
-.catalog-title a:focus {
+.catalog-title:focus {
   opacity: 0.3;
 }
 
@@ -241,7 +340,49 @@ ul {
   font-size: 16px;
   line-height: 18px;
   color: var(--contacts);
+  text-align: center;
 }
+
+/* Pagination */
+
+.pagination {
+  list-style-type: none;
+}
+
+.pagination-item a{
+  font-weight: 500;
+  color: var(--text-black);
+  background-color: var(--basic-grey);
+}
+
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  border: 3px solid #DBDBDB;
+  background-color: var(--basic-white);
+}
+
+
+.pagination-item a:hover {
+  background-color: var(--guide-grey);
+}
+
+.pagination-item a:focus,
+.pagination-item a:active  {
+  background-color: var(--guide-extra-grey);
+  color: rgba(var(--text-black), 0.3);
+}
+
+/* Main footer */
+
+.main-footer {
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
+
 
 /* Contacts */
 
@@ -264,6 +405,9 @@ ul {
 }
 
 /* Social */
+
+.social {display: grid;
+  grid-template-columns: 1fr min-content;}
 
 .social-title {
   font-size: 36px;
