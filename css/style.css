@@ -128,6 +128,7 @@ ul {
 
 .main-header-navigation {
   display: grid;
+  grid-template-columns: auto 1fr auto;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -148,7 +149,7 @@ ul {
 /* Container */
 
 .container {
-  width: 940px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -156,23 +157,10 @@ ul {
 
 /* Logo */
 .main-header-logo {
-  order: 0; /* логотип не встаёт в ряд с навом почему-то... */
   outline: 5px solid rgba(255, 0, 0, 0.3);
   outline-offset: -5px;
 }
 
-
-.main-header-bar {
-  background-color: var(--basic-grey);
-}
-
-.main-header-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 1fr min-content;
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
 
 .main-header-links {
   margin: 0;
@@ -196,7 +184,8 @@ ul {
 }
 
 .about-item {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   outline: 5px solid rgba(0, 255, 255 , 0.3);
   outline-offset: -5px;
 }
@@ -205,6 +194,7 @@ ul {
   font-size: 55px;
   line-height: 55px;
 }
+
 
 /* Services */
 
@@ -235,13 +225,13 @@ ul {
 
 /* More-Wrapper */
 .more-wrapper {  display: grid;
-  grid-template-columns: 1fr 1fr;
-}}
+  grid-template-columns: 2fr 1fr;
+}
 
 
 /* More */
 
-.more { /* этот секшн не выделился цветом почему-то + не понял, как отцентровать текст в нем */
+.more {
   outline: 5px solid rgba(255, 0, 0 , 0.3);
   outline-offset: -5px;
 }
@@ -271,10 +261,7 @@ ul {
   text-transform: uppercase;
 }
 
-.add-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+
 
 
 .add-percents {
@@ -407,7 +394,7 @@ ul {
 /* Social */
 
 .social {display: grid;
-  grid-template-columns: 1fr min-content;}
+  grid-template-columns: auto 1fr;}
 
 .social-title {
   font-size: 36px;
@@ -422,9 +409,26 @@ ul {
 
 /* Popup */
 
+.modal{
+  width: 940px;
+  margin: 0 auto;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
 .modal-title {
   font-size: 45px;
   line-height: 52,73px;
+}
+
+
+.modal-form {display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+  "mn mn mn mn me me me me"
+  "mt mt mt mt mt mt mt mt"
+  "mb mb mb . . . . .";
+  column-gap: 40px;
 }
 
 .modal-form input {
@@ -436,7 +440,20 @@ ul {
   line-height: 18px;
 }
 
+.modal-name {
+  grid-area: mn;
+}
+
+.modal-email {
+  grid-area: me;
+}
+
+.modal-text {
+  grid-area: mt;
+}
+
 .modal-button {
   border: none;
+  grid-area: mb;
 }
 
