@@ -273,9 +273,28 @@ ul {
 
 /* Clients */
 .clients-list {display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;}
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 40px;
+}
+
+
+/* Page-Catalog */
+
+.page-catalog {display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 140px;
+    width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  }
+
+.page-catalog .page-title {grid-column: 1 / -1;}
+
+
 
 /* Filters */
+
+.filters {width: 260px;}
 
 .filter legend {
   font-size: 18px;
@@ -298,11 +317,26 @@ ul {
   text-transform: uppercase;
 }
 
+/* Sorting */
+
+.sorting {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+}
+
 
 /* Catalog */
 
+
+
+.catalog-list {display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;}
+
 .catalog-info {
   background-color: var(--basic-grey);
+  width: 360px;
 }
 
 .catalog-title {
@@ -310,8 +344,6 @@ ul {
   line-height: 30px;
   text-transform: uppercase;
   display: inline;
-
-}
 }
 
 .catalog-title:hover {
