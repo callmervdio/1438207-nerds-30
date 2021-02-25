@@ -118,8 +118,8 @@ ul {
 /* Main header */
 
 .main-header {
-
-  margin-bottom: 70px;
+  margin-top: 75px;
+  margin-bottom: 9px;
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
 }
@@ -163,12 +163,18 @@ ul {
 
 
 .main-header-links {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
   list-style: none;
 }
+
+.main-header-link {
+  padding-right: 45px;}
+
+
 
 .main-header-cart {
   outline: 5px solid rgba(255, 0, 255, 0.3);
@@ -181,6 +187,7 @@ ul {
 
 .about {
   outline: 5px solid rgba(255, 0, 0 , 0.3);
+  margin-bottom: 80px;
 }
 
 .about-item {
@@ -212,7 +219,7 @@ ul {
 }
 
 .services-item {
-  text-align: center;
+  text-align: left;
   outline: 5px solid rgba(0, 255, 255 , 0.3);
   outline-offset: -5px;
 }
@@ -253,6 +260,10 @@ ul {
   outline-offset: -5px;
 }
 
+.add-list {
+  padding-left: 0;
+  display: flex;}
+
 .add-item {
   line-height: 18px;
 }
@@ -269,6 +280,7 @@ ul {
   line-height: 64px;
   font-weight: 700;
   color: var(--text-black);
+  display: block;
 }
 
 /* Clients */
