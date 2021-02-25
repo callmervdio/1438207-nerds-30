@@ -281,7 +281,7 @@ ul {
 /* Page-Catalog */
 
 .page-catalog {display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 260px 1fr;
     column-gap: 140px;
     width: 1160px;
   margin: 0 auto;
@@ -294,7 +294,7 @@ ul {
 
 /* Filters */
 
-.filters {width: 260px;}
+
 
 .filter legend {
   font-size: 18px;
@@ -332,11 +332,11 @@ ul {
 
 .catalog-list {display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 40px;}
+  column-gap: 40px;
+padding-left: 0;}
 
 .catalog-info {
   background-color: var(--basic-grey);
-  width: 360px;
 }
 
 .catalog-title {
