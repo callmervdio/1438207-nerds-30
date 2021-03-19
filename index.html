@@ -17,7 +17,7 @@
 <body class="page-body">
   <header class="main-header">
     <nav class="main-header-navigation container">
-      <a class="main-header-logo" href="#"><img src="img/logo.png" width="160" height="66" alt="Логотип «Нёрдс»"></a>
+      <a class="main-header-logo"><img src="img/logo.png" width="160" height="66" alt="Логотип «Нёрдс»"></a>
       <ul class="main-header-links">
         <li class="main-header-link"><a href="#">Студия</a></li>
         <li class="main-header-link"><a href="#">Клиенты</a></li>
@@ -33,7 +33,7 @@
     <section class="about">
       <div class="container">
         <h2 class="visually-hidden">О нас</h2>
-        <div class="about-item">
+        <div class="about-item about-item_current">
           <div class="about-container">
             <h3 class="title about-title">Долго, дорого, скрупулезно.
             </h3>
@@ -41,7 +41,7 @@
             </p>
             <a class="button button-red about-button" href="#">Узнать больше</a>
           </div>
-          <img src="img/index-slide1.png" width="760" height="431" alt="Слайд 1">
+          <img class="about-image" src="img/index-slide1.png" width="760" height="431" alt="Слайд 1">
         </div>
         <div class="about-item">
           <div class="about-container">
@@ -51,7 +51,7 @@
             </p>
             <a class="button button-red about-button" href="#">Узнать больше</a>
           </div>
-          <img src="img/index-slide2.png" width="760" height="431" alt="Слайд 2">
+          <img class="about-image" src="img/index-slide2.png" width="760" height="431" alt="Слайд 2">
         </div>
         <div class="about-item">
           <div class="about-container">
@@ -61,9 +61,18 @@
             </p>
             <a class="button button-red about-button" href="#">Узнать больше</a>
           </div>
-          <img src="img/index-slide3.png" width="760" height="431" alt="Слайд 3">
+          <img class="about-image" src="img/index-slide3.png" width="760" height="431" alt="Слайд 3">
+        </div>
+        <div class="slider-controls">
+          <button type="button" aria-label="Первый слайд"></button>
+          <button type="button" aria-label="Второй слайд"></button>
+          <button type="button" aria-label="Третий слайд"></button>
         </div>
       </div>
+
+
+
+
     </section>
 
     <section class="services">
@@ -135,8 +144,9 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <a class="contacts-image" href="#"><img src="img/map.png" width="1440" height="416" alt="Карта"></a>
-      <iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003128!2d30.32085871610071!3d59.93871916905414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615919300804!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
      <div class="container">
+      <iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003128!2d30.32085871610071!3d59.93871916905414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615919300804!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
        <div class="contacts-info">
       <p class="title-bold contacts-title">NЁRDS DESIGN STUDIO</p>
       <p class="contacts-text">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
@@ -181,6 +191,8 @@
   </section>
 
   <script src="js/popup.js"></script>
+  <script src="js/slider.js"></script>
+
 </body>
 
 </html>
