@@ -8,10 +8,8 @@ let initSlider = function() {
     sliderToggle.addEventListener('click', function() {
       sliderItems[currentSlide].classList.remove('about-item_current');
       sliderToggles[currentSlide].classList.remove('slider-control_current');
-
       sliderItems[index].classList.add('about-item_current');
       sliderToggle.classList.add('slider-control_current');
-
       currentSlide = index;
     })
   })

@@ -5,7 +5,7 @@ const popupClose = popup.querySelector(".modal-close");
 const popupForm = popup.querySelector(".modal-form");
 const popupName = popup.querySelector("#modal-name");
 const popupEmail = popup.querySelector("#modal-email");
-const input = popup.querySelectorAll('input');
+const input = popup.querySelectorAll("input");
 
 let isStorageSupport = true;
 let storage = "";
@@ -19,7 +19,6 @@ try {
 popupButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-
   if (storage) {
     popupName.value = storage;
     popupEmail.focus();
